@@ -1,0 +1,69 @@
+@import "_variables";
+
+.documentLibraryPage {
+    .uploadFileBox {
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        margin-top: 20px;
+        background: #f4f9fb;
+        border: 1px dashed $c-p;
+        border-radius: 15px;
+
+        &.hidden {
+            display: none;
+        }
+
+        input[type="file"] {
+            opacity: 0;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            cursor: pointer;
+        }
+
+        .title {
+            color: $c-p;
+        }
+    }
+}
+
+.addDocumentLibraryPage {
+    .uploadFileBox {
+        height: 50px;
+        background: rgba(31, 144, 255, 0.1);
+        border: 1px dashed #066163;
+        border-radius: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+
+        .title {
+            font-weight: 500;
+            font-size: 16px;
+            text-align: center;
+            color: #1e2022;
+            margin-bottom: 4px;
+        }
+
+        .uploadInput {
+            width: fit-content;
+            margin: 16px auto;
+        }
+
+        input[type="file"] {
+            opacity: 0;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            cursor: pointer;
+        }
+    }
+}

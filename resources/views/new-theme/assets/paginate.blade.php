@@ -1,0 +1,1 @@
+{!! $assets->appends(request()->input())->links() !!}

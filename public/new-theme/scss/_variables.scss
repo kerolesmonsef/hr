@@ -1,0 +1,38 @@
+// $font-stack: Helvetica, sans-serif;
+
+$c-p: var(--color-primary);
+$c-s: var(--color-second);
+$c-t: var(--color-third);
+$c-error: var(--color-error);
+
+$c-body: var(--color-body);
+$c-card: var(--color-card);
+
+$c-f-p: var(--color-f-primary);
+$c-f-s: var(--color-f-second);
+$c-f-t: var(--color-f-third);
+$c-f-f: var(--color-f-fourth);
+
+$c-b-p: var(--c-b-p);
+$c-b-s: var(--c-b-s);
+$c-b-t: var(--c-b-t);
+
+$f-en: var(--f-en);
+$f-ar: var(--f-ar);
+
+$color-bg-primary: var(--color-bg-primary);
+$color-bg-second: var(--color-bg-second);
+
+$color-border-primary: var(--olor-border-primary);
+$letter-spacing: var(--letter-spacing);
+
+//
+
+// @function sum() {
+
+//     @if lang(ar) {
+//         @return #11fe31;
+//     }
+// }
+
+// $color-primary:sum();

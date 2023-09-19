@@ -1,0 +1,151 @@
+.search input {
+  height: 38px;
+}
+
+.addRolePage h2,
+.addRolePage h4 {
+  font-weight: 500;
+  font-size: 14px;
+  text-transform: capitalize;
+  color: var(--color-f-primary);
+}
+.addRolePage h2:lang(en),
+.addRolePage h4:lang(en) {
+  letter-spacing: 0.003em;
+}
+.addRolePage h2 {
+  font-size: 16px;
+}
+.addRolePage h4 {
+  font-weight: 400;
+}
+.addRolePage form .head .buttonS6 {
+  color: var(--color-f-primary);
+}
+.addRolePage form .permissionColS1,
+.addRolePage form .permissionColS2 {
+  margin-bottom: 45px;
+}
+.addRolePage form .permissionColS1 h2,
+.addRolePage form .permissionColS2 h2 {
+  font-weight: 600;
+  font-size: 14px;
+  color: var(--color-primary);
+  text-transform: capitalize;
+  margin-bottom: 18px;
+}
+.addRolePage form .permissionColS2 {
+  margin-bottom: 20px;
+}
+.addRolePage form .permissionBox {
+  margin-bottom: 20px;
+}
+.addRolePage form .permissionBox .boxHead {
+  margin-bottom: 20px;
+}
+@media (max-width: 500px) {
+  .addRolePage form .sectionS2 .head {
+    justify-content: flex-end;
+  }
+  .addRolePage form .sectionS2 .head h2 {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .addRolePage form .sectionS2 .permissionBox .boxHead {
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  .addRolePage form .sectionS2 .permissionBox .boxHead h4 {
+    align-self: flex-start;
+    margin-bottom: 10px;
+  }
+}
+
+.attendancePage .customeSelect {
+  width: -moz-fit-content;
+  width: fit-content;
+  border: 1px solid #f9f9f9;
+  border-radius: 6px;
+  padding: 0 10px;
+  -webkit-padding-start: 0;
+          padding-inline-start: 0;
+  gap: 10px;
+}
+.attendancePage .customeSelect select {
+  padding: 0 10px;
+  height: 38px;
+  font-weight: 500;
+  border: none !important;
+  -webkit-padding-end: 30px;
+          padding-inline-end: 30px;
+}
+.attendancePage .customeSelect p {
+  min-width: 130px;
+}
+.attendancePage .form-switch {
+  padding: 0;
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.attendancePage .form-switch .form-check-input {
+  width: 50px;
+  height: 26px;
+  box-shadow: none;
+  border: 1px solid var(--color-primary);
+  margin: 0;
+  -webkit-margin-start: 10px;
+          margin-inline-start: 10px;
+}
+.attendancePage .form-switch .form-check-input:checked {
+  background-color: var(--color-primary);
+}
+.attendancePage .disabled {
+  opacity: 0.5;
+  cursor: not-allowed !important;
+}
+
+.salaryPage .title {
+  color: var(--color-f-primary);
+  font-weight: 500;
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+.salaryPage .detailsTabsHead {
+  flex-wrap: nowrap;
+}
+.salaryPage .detailsTabsHead .nav-link {
+  padding: 10px 9px;
+  font-size: 14px;
+  height: 100%;
+}
+.salaryPage .inputCheckbox {
+  width: 100%;
+  border: 1px solid #efefef;
+  border-radius: 6px;
+  padding: 10px 15px;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+}
+.salaryPage .inputCheckbox p {
+  color: #868686;
+}
+
+.addContractPage .avaliableTags h4 {
+  font-weight: 600;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+.addContractPage .avaliableTags p {
+  margin-bottom: 20px;
+  font-weight: 400;
+  font-size: 14px;
+  color: var(--color-primary);
+}
+.addContractPage .ck.ck-editor {
+  flex-direction: column;
+}
+.addContractPage .ck.ck-editor .ck-toolbar__items {
+  border: 1px solid #ccced1;
+  border-bottom: none;
+}

@@ -1,0 +1,1 @@
+{!! $offers->appends(request()->input())->links() !!}

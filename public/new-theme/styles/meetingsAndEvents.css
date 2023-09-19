@@ -1,0 +1,179 @@
+.meetingsPage .heading {
+  margin-bottom: 15px;
+}
+.meetingsPage .meetingsCard {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  margin-bottom: 20px;
+  background-color: #ffffff;
+  padding: 10px 20px;
+  border-radius: 6px;
+}
+.meetingsPage .meetingsCard .date {
+  background-color: var(--color-primary);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  color: #fff;
+  border-radius: 6px;
+  font-size: 20px;
+  font-weight: bold;
+  width: 80px;
+  height: 80px;
+}
+.meetingsPage .meetingsCard .content h3 {
+  font-weight: 600;
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+.meetingsPage .meetingsCard .content p {
+  color: #b3b3b3;
+  font-weight: 400;
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+.meetingsPage .meetingsCard .content .details {
+  color: var(--color-primary);
+  cursor: pointer;
+}
+.meetingsPage .meetingsCard .details svg:lang(ar) {
+  rotate: 180deg;
+}
+.meetingsPage textarea {
+  border: 1px solid #d8d8d8;
+  border-radius: 6px;
+  padding: 10px;
+  outline: none;
+  margin-top: 10px;
+  height: 200px;
+  width: 100%;
+}
+.meetingsPage .calendar .calendarSelect {
+  width: 200px;
+  margin: 10px 0;
+}
+.meetingsPage .calendar .calendarSelect input {
+  font-weight: 600;
+  font-size: 16px;
+  border: none !important;
+}
+.meetingsPage .calendar .fc td {
+  border: none;
+}
+.meetingsPage .calendar .fc .fc-header-toolbar {
+  display: none;
+}
+.meetingsPage .calendar .fc-scrollgrid {
+  border: none !important;
+}
+.meetingsPage .calendar .fc-scrollgrid .fc-col-header-cell {
+  border: none;
+}
+.meetingsPage .calendar .fc-scrollgrid .fc-scrollgrid-sync-table {
+  -webkit-border-start: 1px solid rgba(6, 97, 99, 0.1);
+          border-inline-start: 1px solid rgba(6, 97, 99, 0.1);
+}
+.meetingsPage .calendar .fc-col-header-cell {
+  padding: 20px;
+}
+.meetingsPage .calendar .fc-col-header-cell a {
+  color: #292d32;
+  font-weight: normal;
+}
+.meetingsPage .calendar .fc-day-other .fc-daygrid-day-top {
+  opacity: 1 !important;
+}
+.meetingsPage .calendar .fc-day-other .fc-daygrid-day-top a {
+  color: #066163 !important;
+}
+.meetingsPage .calendar .fc-daygrid-day-frame {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 10px;
+  border: 1px solid rgba(6, 97, 99, 0.1);
+}
+.meetingsPage .calendar .fc-daygrid-day-frame .fc-daygrid-day-top {
+  flex-direction: row;
+}
+.meetingsPage .calendar .fc-daygrid-day-frame .fc-daygrid-day-top .fc-daygrid-day-number {
+  color: #292d32;
+}
+.meetingsPage .calendar .fc-daygrid-day-frame .fc-daygrid-event-harness {
+  position: relative;
+  width: 35px;
+  height: 35px;
+}
+.meetingsPage .calendar .fc-daygrid-day-frame .fc-daygrid-event-harness:first-of-type {
+  left: 0 !important;
+}
+.meetingsPage .calendar .fc-daygrid-day-frame .fc-daygrid-event-harness:nth-of-type(1) {
+  left: -8px;
+  z-index: 11;
+}
+.meetingsPage .calendar .fc-daygrid-day-frame .fc-daygrid-event-harness:nth-of-type(2) {
+  left: -16px;
+  z-index: 12;
+}
+.meetingsPage .calendar .fc-daygrid-day-frame .fc-daygrid-event-harness:nth-of-type(3) {
+  left: -24px;
+  z-index: 13;
+}
+.meetingsPage .calendar .fc-daygrid-day-frame .fc-daygrid-event-harness:nth-of-type(4) {
+  left: -32px;
+  z-index: 14;
+}
+.meetingsPage .calendar .fc-daygrid-day-frame .fc-daygrid-event-harness img {
+  width: 35px;
+  height: 35px;
+}
+.meetingsPage .calendar .fc-daygrid-day-frame .fc-daygrid-day-events {
+  display: flex;
+}
+.meetingsPage .calendar .fc-daygrid-day-frame .fc-daygrid-day-events .fc-event {
+  background-color: transparent !important;
+  border: none !important;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.meetingsPage .tooltipS1.show .tooltip {
+  min-width: 90px;
+  padding: 10px 5px;
+  top: 0px;
+  height: 37px;
+}
+.meetingsPage .drawerS1 .logo {
+  border: 1px solid #d8d8d8;
+  border-radius: 6px;
+  width: 130px;
+  height: 130px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  padding: 20px;
+}
+.meetingsPage .drawerS1 .logo img {
+  width: 100%;
+  border-radius: 10px;
+}
+.meetingsPage .drawerS1 .logo .editIcon {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+}
+.meetingsPage .drawerS1 .logo .editIcon svg {
+  cursor: pointer;
+}
+.meetingsPage .drawerS1 .logo input[type=file] {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}

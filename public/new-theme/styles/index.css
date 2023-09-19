@@ -1,0 +1,46 @@
+.indexPage .sectionOne {
+  margin-bottom: 20px;
+}
+.indexPage .sectionOne .cardHead {
+  margin-bottom: 20px;
+}
+.indexPage .sectionOne .cardHead .cardS1 {
+  overflow: hidden;
+  height: 100%;
+}
+.indexPage .sectionOne .cardHead .cardS1 .mainIcon {
+  background: #f9f9f9;
+  border: 1px solid #ffffff;
+  border-radius: 10px;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.indexPage .sectionOne .cardHead .cardS1 .sectionNumber .name {
+  text-transform: capitalize;
+  font-weight: 400;
+  font-size: 12px;
+  overflow: hidden;
+  color: var(--color-f-second);
+  margin-bottom: 0px;
+}
+.indexPage .sectionOne .cardHead .cardS1 .sectionNumber .number {
+  font-weight: 600;
+  font-size: 24px;
+  color: var(--color-f-primary);
+  -webkit-margin-end: 10px;
+          margin-inline-end: 10px;
+}
+.indexPage .sectionTwo {
+  margin-bottom: 20px;
+}
+.indexPage .sectionTwo .circleChart {
+  width: 250px;
+  margin: auto;
+  margin-top: 20px;
+}
+.indexPage .sectionTwo .cardS1 {
+  margin-bottom: 20px;
+}

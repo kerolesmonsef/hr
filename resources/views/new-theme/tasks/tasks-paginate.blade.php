@@ -1,0 +1,1 @@
+{!! $tasks->appends(request()->input())->links() !!}

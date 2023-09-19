@@ -1,0 +1,77 @@
+.vacationPage .pageS1 .selectPermissions {
+  width: 100px;
+  margin-left: auto;
+  margin-bottom: 20px;
+}
+.vacationPage .pageS1 .cardHead .cardS1 {
+  display: flex;
+  padding: 15px;
+}
+.vacationPage .pageS1 .cardHead .cardS1 .icon {
+  flex-shrink: 0;
+  -webkit-margin-end: 15px;
+          margin-inline-end: 15px;
+  width: 42px;
+}
+.vacationPage .pageS1 .cardHead .cardS1 .name {
+  text-transform: capitalize;
+  height: 25px;
+  font-weight: 400;
+  font-size: 14px;
+  overflow: hidden;
+  color: var(--color-f-second);
+  margin-bottom: 10px;
+}
+.vacationPage .pageS1 .cardHead .cardS1 .name:lang(en) {
+  letter-spacing: 0.003em;
+}
+.vacationPage .pageS1 .cardHead .cardS1 .sectionNumber {
+  display: flex;
+  align-items: center;
+}
+.vacationPage .pageS1 .cardHead .cardS1 .sectionNumber .number {
+  font-weight: 600;
+  font-size: 24px;
+  color: var(--color-primary);
+  -webkit-margin-end: 10px;
+          margin-inline-end: 10px;
+}
+.vacationPage .pageS1 .searchBar {
+  margin: 20px 0;
+}
+.vacationPage .pageS1 .searchBar .input-group {
+  width: 300px;
+  border-radius: 10px;
+  background-color: var(--color-card);
+  padding: 5px;
+}
+.vacationPage .pageS1 .searchBar .input-group .input-group-text,
+.vacationPage .pageS1 .searchBar .input-group input {
+  background: transparent;
+  border: none;
+  box-shadow: none;
+}
+.vacationPage .pageS1 .searchBar .addNew {
+  background: var(--color-primary);
+  color: #fff;
+  border-radius: 2px;
+  padding: 10px 20px;
+}
+.vacationPage .pageS1 .permissionsTable {
+  margin-top: 30px;
+}
+.vacationPage .pageS1 .permissionsTable .table {
+  text-align: center;
+}
+.vacationPage .pageS1 .permissionsTable .table thead th {
+  color: #313030;
+}
+.vacationPage .pageS1 .permissionsTable .table th, .vacationPage .pageS1 .permissionsTable .table td {
+  border: 1px solid #EBEBEB;
+}
+.vacationPage .pageS1 .name {
+  color: var(--color-f-primary);
+  font-weight: 500;
+  font-size: 20px;
+  margin-bottom: 10px;
+}

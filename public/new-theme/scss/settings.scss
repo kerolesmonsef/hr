@@ -1,0 +1,192 @@
+@import "_variables";
+
+.search {
+    input {
+        height: 38px;
+    }
+}
+
+.addRolePage {
+    h2,
+    h4 {
+        font-weight: 500;
+        font-size: 14px;
+        text-transform: capitalize;
+        color: $c-f-p;
+
+        &:lang(en) {
+            letter-spacing: 0.003em;
+        }
+    }
+    h2 {
+        font-size: 16px;
+    }
+    h4 {
+        font-weight: 400;
+    }
+
+    form {
+        .head {
+            .buttonS6 {
+                color: $c-f-p;
+            }
+        }
+
+        .permissionColS1,
+        .permissionColS2 {
+            margin-bottom: 45px;
+
+            h2 {
+                font-weight: 600;
+                font-size: 14px;
+                color: $c-p;
+                text-transform: capitalize;
+                margin-bottom: 18px;
+            }
+        }
+
+        .permissionColS2 {
+            margin-bottom: 20px;
+        }
+
+        .permissionBox {
+            margin-bottom: 20px;
+
+            .boxHead {
+                margin-bottom: 20px;
+            }
+        }
+    }
+
+    @media (max-width: 500px) {
+        form {
+            .sectionS2 {
+                .head {
+                    justify-content: flex-end;
+
+                    h2 {
+                        width: 100%;
+                        margin-bottom: 10px;
+                    }
+                }
+
+                .permissionBox {
+                    .boxHead {
+                        flex-direction: column;
+                        align-items: flex-end;
+
+                        h4 {
+                            align-self: flex-start;
+                            margin-bottom: 10px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.attendancePage {
+    .customeSelect {
+        width: fit-content;
+        border: 1px solid #f9f9f9;
+        border-radius: 6px;
+        padding: 0 10px;
+        padding-inline-start: 0;
+        gap: 10px;
+
+        select {
+            padding: 0 10px;
+            height: 38px;
+            font-weight: 500;
+            border: none !important;
+            padding-inline-end: 30px;
+        }
+
+        p {
+            min-width: 130px;
+        }
+    }
+
+    .form-switch {
+        padding: 0;
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+
+        .form-check-input {
+            width: 50px;
+            height: 26px;
+            box-shadow: none;
+            border: 1px solid $c-p;
+            margin: 0;
+            margin-inline-start: 10px;
+
+            &:checked {
+                background-color: $c-p;
+            }
+        }
+    }
+
+    .disabled {
+        opacity: 0.5;
+        cursor: not-allowed !important;
+    }
+}
+
+.salaryPage {
+    .title {
+        color: $c-f-p;
+        font-weight: 500;
+        font-size: 16px;
+        margin-bottom: 15px;
+    }
+
+    .detailsTabsHead {
+        flex-wrap: nowrap;
+        .nav-link {
+            padding: 10px 9px;
+
+            font-size: 14px;
+            height: 100%;
+        }
+    }
+
+    .inputCheckbox {
+        width: 100%;
+        border: 1px solid #efefef;
+        border-radius: 6px;
+        padding: 10px 15px;
+        justify-content: space-between;
+        flex-direction: row-reverse;
+
+        p {
+            color: #868686;
+        }
+    }
+}
+
+.addContractPage {
+    .avaliableTags {
+        h4 {
+            font-weight: 600;
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+
+        p {
+            margin-bottom: 20px;
+            font-weight: 400;
+            font-size: 14px;
+            color: $c-p;
+        }
+    }
+    .ck.ck-editor {
+        flex-direction: column;
+
+        .ck-toolbar__items {
+            border: 1px solid #ccced1;
+            border-bottom: none;
+        }
+    }
+}

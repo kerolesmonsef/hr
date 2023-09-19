@@ -1,0 +1,1 @@
+{!! $templates->appends(request()->input())->links() !!}

@@ -1,0 +1,147 @@
+.newsPage .buttonS2 {
+  transition: all 0.4s;
+}
+.newsPage .buttonS2.withBorder svg {
+  width: 10px;
+  transition: all 0.5s;
+}
+.newsPage .buttonS2.resetBtn {
+  color: #868686;
+  border: 1px solid #868686;
+}
+.newsPage .buttonS2.show {
+  border-color: var(--color-primary);
+}
+.newsPage .buttonS2.show svg {
+  rotate: 180deg;
+}
+.newsPage .search .taskSearch {
+  background: #fff;
+}
+.newsPage .search .taskSearch input {
+  height: 35px;
+}
+.newsPage .newsCards .newsCard {
+  background: #ffffff;
+  border: 1px solid #efefef;
+  border-radius: 30px;
+  padding: 25px;
+  margin-bottom: 20px;
+}
+.newsPage .newsCards .newsCard:hover {
+  cursor: pointer;
+  background: rgba(9, 97, 99, 0.1098039216);
+}
+.newsPage .newsCards .newsCard .cardBg {
+  margin-bottom: 15px;
+  height: 250px;
+  position: relative;
+  background-size: cover !important;
+  background-position: center center !important;
+  border-radius: 16px;
+}
+.newsPage .newsCards .newsCard .title {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 21px;
+  margin-bottom: 10px;
+  max-height: 50px;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+.newsPage .newsCards .newsCard .brandLogo {
+  border-radius: 50%;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  width: 56px;
+  height: 56px;
+  background: #fff;
+  background-size: cover !important;
+  background-position: center center !important;
+}
+.newsPage .newsCards .newsCard .brandName {
+  color: var(--color-f-primary);
+  font-weight: 500;
+  font-size: 12px;
+}
+.newsPage .newsCards .newsCard .date {
+  font-size: 12px;
+}
+.newsPage .drawerS1 .logo {
+  border: 1px solid #d8d8d8;
+  border-radius: 6px;
+  width: 130px;
+  height: 130px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  padding: 20px;
+}
+.newsPage .drawerS1 .logo img {
+  width: 100%;
+  border-radius: 10px;
+}
+.newsPage .drawerS1 .logo .editIcon {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+}
+.newsPage .drawerS1 .logo .editIcon svg {
+  cursor: pointer;
+}
+.newsPage .drawerS1 .logo input[type=file] {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+
+.addNewsPage .uploadFileBox {
+  height: 199px;
+  background: rgba(31, 144, 255, 0.1);
+  border: 1px dashed #066163;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin-bottom: 1rem;
+}
+.addNewsPage .uploadFileBox .title {
+  font-weight: 500;
+  font-size: 16px;
+  text-align: center;
+  color: #1e2022;
+  margin-bottom: 4px;
+}
+.addNewsPage .uploadFileBox .des {
+  font-weight: 400;
+  font-size: 14px;
+  text-align: center;
+  color: #868686;
+}
+.addNewsPage .uploadFileBox .uploadInput {
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 16px auto;
+}
+.addNewsPage .uploadFileBox input[type=file] {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+.addNewsPage .uploadFileBox .fileSize {
+  font-size: 14px;
+  font-weight: 400;
+  text-align: center;
+  color: #77838f;
+}

@@ -1,0 +1,1 @@
+{!! $attendances->appends(request()->input())->links() !!}

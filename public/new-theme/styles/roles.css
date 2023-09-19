@@ -1,0 +1,55 @@
+.rolesPage {
+  margin-bottom: 100px;
+}
+.rolesPage .searchBar {
+  margin-bottom: 20px;
+}
+.rolesPage .searchBar .input-group {
+  width: 300px;
+  border-radius: 10px;
+  background-color: var(--color-card);
+  padding: 5px;
+}
+.rolesPage .searchBar .input-group .input-group-text,
+.rolesPage .searchBar .input-group input {
+  background: transparent;
+  border: none;
+  box-shadow: none;
+}
+.rolesPage .searchBar .addNew {
+  background: var(--color-primary);
+  color: #fff;
+  border-radius: 2px;
+  padding: 10px 20px;
+}
+.rolesPage .rolesContent .name {
+  color: var(--color-f-primary);
+  font-weight: 500;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+.rolesPage .rolesContent .rolesCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+.rolesPage .rolesContent .rolesCard .heading {
+  font-weight: bold;
+}
+.rolesPage .rolesContent .rolesCard .buttons {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+.rolesPage .rolesContent .rolesCard .buttons button {
+  width: 100px;
+}
+.rolesPage .rolesContent .rolesCard .buttons button.edit {
+  background: var(--color-primary);
+}
+.rolesPage .rolesContent .rolesCard .buttons button.delete {
+  background: #CC0707;
+}

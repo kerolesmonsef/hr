@@ -1,0 +1,33 @@
+.usersPage .searchBar {
+  margin-bottom: 20px;
+}
+.usersPage .searchBar .input-group {
+  width: 300px;
+  border-radius: 10px;
+  background-color: var(--color-card);
+  padding: 5px;
+}
+.usersPage .searchBar .input-group .input-group-text,
+.usersPage .searchBar .input-group input {
+  background: transparent;
+  border: none;
+  box-shadow: none;
+}
+.usersPage .searchBar .addNew {
+  background: var(--color-primary);
+  color: #fff;
+  border-radius: 2px;
+  padding: 10px 20px;
+}
+.usersPage .users .name {
+  color: var(--color-f-primary);
+  font-weight: 500;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+.usersPage .users .table {
+  text-align: center;
+}
+.usersPage .users .table th, .usersPage .users .table td {
+  border: 1px solid #EBEBEB;
+}

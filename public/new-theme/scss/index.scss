@@ -1,0 +1,54 @@
+@import "variables";
+
+.indexPage {
+    .sectionOne {
+        margin-bottom: 20px;
+        .cardHead {
+            margin-bottom: 20px;
+
+            .cardS1 {
+                overflow: hidden;
+                height: 100%;
+
+                .mainIcon {
+                    background: #f9f9f9;
+                    border: 1px solid #ffffff;
+                    border-radius: 10px;
+                    width: 40px;
+                    height: 40px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+                .sectionNumber {
+                    .name {
+                        text-transform: capitalize;
+                        font-weight: 400;
+                        font-size: 12px;
+                        overflow: hidden;
+                        color: $c-f-s;
+                        margin-bottom: 0px;
+                    }
+                    .number {
+                        font-weight: 600;
+                        font-size: 24px;
+                        color: $c-f-p;
+                        margin-inline-end: 10px;
+                    }
+                }
+            }
+        }
+    }
+    .sectionTwo {
+        margin-bottom: 20px;
+        .circleChart {
+            width: 250px;
+            margin: auto;
+            margin-top: 20px;
+        }
+
+        .cardS1 {
+            margin-bottom: 20px;
+        }
+    }
+}

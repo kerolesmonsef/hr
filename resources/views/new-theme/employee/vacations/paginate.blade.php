@@ -1,0 +1,1 @@
+{!! $vacations->appends(request()->input())->links() !!}

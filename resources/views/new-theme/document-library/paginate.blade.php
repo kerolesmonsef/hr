@@ -1,0 +1,1 @@
+{!! $categories->appends(request()->input())->links() !!}

@@ -1,0 +1,22 @@
+.payrollReports .payrollCards .payrollCard {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 20px;
+  padding: 15px;
+}
+.payrollReports .payrollCards .payrollCard .headerTitle {
+  font-weight: 400;
+  font-size: 16px;
+  margin-bottom: 15px;
+  color: #868686;
+}
+.payrollReports .payrollCards .payrollCard .number {
+  color: var(--color-primary);
+  font-weight: 600;
+  font-size: 30px;
+}
+.payrollReports .payrollCards .payrollCard .number span {
+  font-size: 12px;
+  font-weight: normal;
+}

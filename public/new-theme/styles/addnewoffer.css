@@ -1,0 +1,47 @@
+.addnewoffer {
+  margin-bottom: 30px;
+}
+.addnewoffer .name {
+  text-transform: capitalize;
+  height: 25px;
+  font-weight: 500;
+  font-size: 16px;
+  overflow: hidden;
+  color: var(--color-f-primary);
+  margin-bottom: 10px;
+}
+.addnewoffer .formInputs {
+  width: 80%;
+}
+.addnewoffer .formInputs input,
+.addnewoffer .formInputs select,
+.addnewoffer .formInputs textarea {
+  background: var(--color-card);
+  border: none;
+  box-shadow: none;
+  padding: 10px;
+  resize: none;
+}
+.addnewoffer .formInputs textarea {
+  height: 100px;
+}
+.addnewoffer .formInputs .hint {
+  color: #F86464;
+  margin-top: 10px;
+}
+.addnewoffer .buttons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 20px;
+}
+.addnewoffer .buttons button {
+  border-radius: 2px;
+  padding: 5px 25px;
+  background: var(--color-primary);
+  border: none;
+}
+.addnewoffer .buttons button.cancel {
+  background: #F8F8F8;
+  border-radius: 6px;
+  color: #B3B3B3;
+}

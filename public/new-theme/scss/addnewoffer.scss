@@ -1,0 +1,59 @@
+@import "_variables";
+
+.addnewoffer {
+    margin-bottom: 30px;
+    .name {
+        text-transform: capitalize;
+        height: 25px;
+        font-weight: 500;
+        font-size: 16px;
+        overflow: hidden;
+        color: $c-f-p;
+        margin-bottom: 10px;
+    }
+
+
+    .formInputs {
+        width: 80%;
+
+        input,
+        select,
+        textarea {
+            background: $c-card;
+            border: none;
+            box-shadow: none;
+            padding: 10px;
+            resize: none;
+        }
+
+        textarea {
+            height: 100px;
+        }
+
+        .hint {
+            color: #F86464;
+            margin-top: 10px;
+        }
+    }
+
+    .buttons {
+        display: flex;
+        justify-content: flex-end;
+        gap: 20px;
+
+        button {
+            border-radius: 2px;
+            padding: 5px 25px;
+            background: $c-p;
+            border: none;
+
+            &.cancel {
+                background: #F8F8F8;
+                border-radius: 6px;
+                color: #B3B3B3;
+            }
+        }
+    }
+
+
+}

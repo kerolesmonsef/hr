@@ -1,0 +1,290 @@
+@import "_variables";
+
+.tasksPage {
+    .formS1 {
+        &.hidden {
+            display: none;
+        }
+        .contentForm {
+            border-bottom: 1px solid #eaeaea;
+            margin-bottom: 20px;
+            padding-bottom: 5px;
+        }
+    }
+    .buttonS2 {
+        transition: all 0.4s;
+
+        &.withBorder {
+            svg {
+                width: 10px;
+                transition: all 0.5s;
+            }
+        }
+
+        &.resetBtn {
+            color: #868686;
+            border: 1px solid #868686;
+        }
+
+        &.show {
+            border-color: $c-p;
+            svg {
+                rotate: 180deg;
+            }
+        }
+    }
+
+    .search {
+        .icons {
+            .icon {
+                height: 32px;
+                width: 32px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 6px;
+                cursor: pointer;
+
+                &.active {
+                    background: $c-p;
+
+                    svg {
+                        path {
+                            stroke: #fff;
+                        }
+                    }
+                }
+            }
+        }
+
+        .gridViewSearch {
+            background: #fff;
+            width: 100%;
+            input {
+                height: 38px;
+            }
+        }
+    }
+
+    .taskMember {
+        margin-top: 20px;
+
+        h4 {
+            font-weight: 400;
+            font-size: 14px;
+            color: $c-f-p;
+        }
+
+        .selectMember {
+            justify-content: start;
+            margin-bottom: 0;
+
+            select {
+                // width: fit-content;
+                border: none !important;
+                padding-inline-start: 0;
+
+                &:focus {
+                    background: transparent !important;
+                }
+            }
+        }
+
+        .addMemberBtn {
+            cursor: pointer;
+        }
+        .removeMemberBtn {
+            cursor: pointer;
+        }
+    }
+
+    .members {
+        li {
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            width: 34px;
+            height: 34px;
+
+            margin-inline-end: -9px;
+
+            img {
+                border: 2px solid #fff;
+                border-radius: 50%;
+                width: 30px;
+                height: 30px;
+            }
+
+            &.number {
+                border: 2px solid #fff;
+                background-color: $c-p;
+                color: #fff;
+            }
+        }
+    }
+
+    .activityCards {
+        .activityCard {
+            margin: 20px 0;
+            h4 {
+                font-weight: 500;
+                font-size: 14px;
+                margin-bottom: 10px;
+
+                span {
+                    font-weight: bold;
+                }
+            }
+
+            p {
+                color: #868686;
+            }
+        }
+    }
+
+    .addNewMemberBtn {
+        color: $c-p;
+        border: 1px dashed $c-p;
+        border-radius: 10px;
+        background: #f9f9f9;
+        height: 50px;
+        margin-bottom: 10px;
+    }
+
+    .tasksContainer {
+        margin: 20px 0;
+
+        #tasksKanban {
+            overflow: auto;
+            padding-bottom: 20px;
+        }
+        .kanban-board {
+            background: #ffffff;
+            box-shadow: 10px 24px 74px rgba(0, 0, 0, 0.04);
+            padding: 24px;
+            border-radius: 10px;
+            overflow: auto;
+            border-radius: 24px;
+            padding-top: 5px;
+
+            &:lang(ar) {
+                float: right;
+            }
+            .kanban-board-header {
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                text-transform: capitalize;
+                margin-bottom: 20px;
+                border-bottom: 3px solid;
+                position: relative;
+                .kanban-title-board {
+                    color: $c-f-p;
+                    font-weight: 500;
+                    font-size: 16px;
+                    margin-inline-start: 20px;
+                }
+                &::before {
+                    content: "";
+                    position: absolute;
+                    width: 8px;
+                    height: 8px;
+                    border-radius: 50%;
+                }
+                &.toDo {
+                    border-color: #de0000;
+
+                    &::before {
+                        background-color: #de0000;
+                    }
+                }
+                &.inProgress {
+                    border-color: #ffa800;
+
+                    &::before {
+                        background-color: #ffa800;
+                    }
+                }
+                &.completed {
+                    border-color: #2c9a30;
+
+                    &::before {
+                        background-color: #2c9a30;
+                    }
+                }
+            }
+
+            .kanban-drag {
+                padding: 0;
+                .kanban-item {
+                    border: 1px solid #efefef;
+                    box-shadow: 10px 24px 74px rgba(0, 0, 0, 0.04);
+                    border-radius: 16px;
+                    padding: 20px;
+                    margin-bottom: 20px;
+
+                    &:hover {
+                        cursor: pointer;
+                        background: rgba(9, 97, 99, 0.1098039216);
+                    }
+
+                    .categorey {
+                        min-width: 102px;
+                        height: 35px;
+                        width: fit-content;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        border-radius: 10px;
+                        color: $c-p;
+                        background-color: rgb(6 97 99 / 10%);
+                        padding: 5px;
+                        margin-bottom: 10px;
+                    }
+                    .title {
+                        color: $c-f-p;
+                        font-weight: 500;
+                        font-size: 16px;
+                        margin-bottom: 10px;
+                        line-height: 24px;
+                        max-height: 50px;
+                        overflow: hidden;
+                        display: -webkit-box;
+                        -webkit-line-clamp: 2;
+                        -webkit-box-orient: vertical;
+                    }
+
+                    .date {
+                        color: $c-f-s;
+                        font-weight: 400;
+                        font-size: 14px;
+                        margin-bottom: 10px;
+                    }
+
+                    .persons {
+                        padding-bottom: 10px;
+                        overflow: auto;
+                        img {
+                            border: 2px solid #066163;
+                            border-radius: 8px;
+                            width: 42px;
+                            height: 42px;
+                        }
+                    }
+                }
+            }
+        }
+
+        .kanban-container {
+            width: 100% !important;
+            display: flex;
+            justify-content: space-between;
+
+            &::after {
+                display: none;
+            }
+        }
+    }
+}

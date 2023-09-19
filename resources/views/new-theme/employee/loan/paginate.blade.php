@@ -1,0 +1,1 @@
+{!! $loans->appends(request()->input())->links() !!}

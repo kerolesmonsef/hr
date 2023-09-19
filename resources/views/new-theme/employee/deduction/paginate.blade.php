@@ -1,0 +1,1 @@
+{!! $deductions->appends(request()->input())->links() !!}

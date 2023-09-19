@@ -1,0 +1,66 @@
+:root {
+  --bs-primary: #066163;
+  --bs-secondary: #ff7701;
+  --bs-success: #066163;
+  --bs-info: #0dcaf0;
+  --bs-font-sans-serif: "Poppins", sans-serif;
+  --color-body: #fff;
+  --color-card: #f8f8f8;
+  --color-primary: #066163;
+  --color-second: #868686;
+  --color-third: #e5f0e4;
+  --color-error: #fc5a5a;
+  --c-b-t: #f9f9f9;
+  --color-f-primary: #001b19;
+  --color-f-second: #868686;
+  --color-f-third: #969696;
+  --color-f-fourth: #121212;
+  --color-bg-primary: #066163;
+  --color-bg-second: #ff0;
+  --c-b-p: #969696;
+  --c-b-s: #e5e5e5;
+  --letter-spacing: -0.02em;
+  --f-en: "Poppins", sans-serif;
+  --f-ar: "Tajawal", sans-serif;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  min-height: 100vh;
+  font-size: 16px;
+  letter-spacing: var(--letter-spacing);
+  background-color: #f9f9f9;
+}
+body:lang(en) {
+  font-family: var(--f-en);
+}
+body:lang(ar) {
+  font-family: var(--f-ar);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-bottom: 0;
+}
+
+ul {
+  padding: 0;
+  list-style-position: inside;
+}
+
+label {
+  margin-bottom: 16px;
+  font-size: 14px;
+}
+
+.containerS1 {
+  padding: 0px 48px;
+}

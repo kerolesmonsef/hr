@@ -1,0 +1,658 @@
+@import "_variables";
+
+.employees {
+    .drawerS1 {
+        .cardS1 {
+            margin-top: 16px;
+        }
+    }
+
+    .addRolePage {
+        .pageS1 {
+            .sectionS2 {
+                .head {
+                    &.withBorder {
+                        margin-bottom: 0;
+                    }
+                }
+            }
+        }
+
+        h2,
+        h3 {
+            font-weight: 500;
+            font-size: 14px;
+            text-transform: capitalize;
+            color: $c-f-p;
+
+            &:lang(en) {
+                letter-spacing: 0.003em;
+            }
+        }
+        h2 {
+            font-size: 16px;
+        }
+        h3 {
+            font-weight: 400;
+        }
+
+        form {
+            .head {
+                .buttonS6 {
+                    color: $c-f-p;
+                }
+            }
+
+            .permissionBox {
+                // width: 42%;
+                margin-bottom: 20px;
+
+                .boxHead {
+                    margin-bottom: 20px;
+                }
+            }
+        }
+        @media (max-width: 500px) {
+            form {
+                .permissionBox {
+                    .boxHead {
+                        flex-direction: column;
+                        align-items: flex-end;
+
+                        h3 {
+                            align-self: flex-start;
+                            margin-bottom: 10px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .mainContent {
+        padding: 0 20px;
+        margin-bottom: 20px;
+
+        .checks {
+            & > div:first-of-type {
+                margin-bottom: 25px;
+            }
+        }
+        @media (max-width: 500px) {
+            padding: 24px;
+        }
+    }
+
+    .buttons {
+        .cancel {
+            background: #868686;
+            border-color: #868686;
+            color: #fff;
+        }
+    }
+
+    .addEvaluation {
+        .contentDrawer {
+            height: 100%;
+            padding-bottom: 10px;
+        }
+
+        .drawerS1 {
+            border-bottom: 1px solid #efefef;
+
+            .question {
+                padding: 30px;
+                border-top: 1px solid #efefef;
+            }
+            .ant-collapse {
+                background: none;
+
+                .ant-collapse-header-text {
+                    font-size: 16px;
+                    font-weight: 600;
+                    text-transform: capitalize;
+                    color: $c-f-p;
+                }
+
+                svg {
+                    font-size: 20px !important;
+                    transition: 1s;
+                }
+
+                .ant-collapse-header {
+                    gap: 10px;
+                    padding: 0px;
+                    display: flex;
+                    align-items: center;
+                }
+            }
+            .collapsed {
+                svg {
+                    color: $c-f-p;
+                }
+                .ant-collapse-expand-icon {
+                    svg {
+                        transition: 1s;
+                        rotate: 180deg;
+                    }
+                }
+            }
+        }
+    }
+
+    .uploadPhoto {
+        border: 1px solid #d8d8d8;
+        border-radius: 6px;
+        height: 184px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        cursor: pointer;
+
+        .uploadIcon {
+            position: absolute;
+            top: 8px;
+            right: 8px;
+        }
+        input {
+            opacity: 0;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+        }
+    }
+}
+
+.evaluationPage {
+    .allEmployees {
+        select {
+            font-weight: 500;
+            font-size: 14px;
+            border: 1px solid #f9f9f9 !important;
+        }
+
+        .evaluationCard {
+            margin-top: 20px;
+
+            .cardContent {
+                display: flex;
+                flex: 2;
+                align-items: center;
+                justify-content: space-between;
+
+                h4 {
+                    font-weight: 400;
+                    font-size: 14px;
+                    color: $c-f-p;
+                }
+
+                ul {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    gap: 3px;
+                    color: $c-f-p;
+                }
+            }
+        }
+    }
+}
+
+.addEvaluationPage {
+    .sectionTitle {
+        input {
+            border: none;
+        }
+    }
+    .inputCheckbox {
+        label {
+            font-weight: 400;
+            font-size: 14px;
+            color: $c-f-p;
+        }
+
+        input[type="radio"] {
+            width: 15px;
+            height: 15px;
+        }
+    }
+    .question {
+        padding: 20px;
+        &:not(:last-child) {
+            border-bottom: 1px solid #efefef;
+        }
+
+        .points {
+            flex-wrap: wrap;
+            .inputS1 {
+                width: 100%;
+                margin: 0;
+
+                input {
+                    padding: 10px;
+                }
+            }
+        }
+
+        .addNewOption {
+            button {
+                margin: 0;
+                padding: 0px;
+            }
+        }
+    }
+
+    .answerS1 {
+        gap: 10px;
+        .answer {
+            input {
+                border: none !important;
+                padding: 5px 7px;
+            }
+        }
+        .inputS1 {
+            margin-bottom: 0px;
+        }
+    }
+
+    .labelWithOptions {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .newSection {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        padding-inline-end: 24px;
+        padding-inline-start: 15px;
+        margin: 30px 0px 20px 0px;
+
+        button {
+            margin: 0px !important;
+            color: $c-p;
+            border: 1px solid $c-p;
+            background: #fff;
+            &:hover {
+                border: 1px solid #ccc;
+            }
+        }
+    }
+    .addNewSection {
+        background: #fff;
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 24px;
+
+        .btn_new {
+            gap: 15px;
+            display: flex;
+            align-items: center;
+        }
+        img {
+            background: #09616321;
+            padding: 13px;
+            border-radius: 26px;
+            border: 1px solid #096163;
+        }
+    }
+
+    .deleteSection {
+        background: none;
+    }
+
+    .addSectionBtn {
+        border: none;
+        background: none;
+        color: $c-p;
+    }
+}
+
+.addPerformancePage {
+    .head {
+        img {
+            cursor: pointer;
+        }
+    }
+    .form-check {
+        label {
+            color: #868686;
+            cursor: pointer;
+        }
+    }
+    .rating {
+        display: flex;
+        align-items: center;
+        border: 1px solid #d8d8d8 !important;
+        padding: 12px 21px;
+        height: 50px;
+        border-radius: 5px;
+        color: $c-f-p;
+
+        .overallRate {
+            display: none;
+        }
+
+        .rate {
+            display: flex;
+            flex-direction: row-reverse;
+
+            &:not(:checked) > input {
+                position: absolute;
+                display: none;
+            }
+            &:not(:checked) > label {
+                width: 1em;
+                overflow: hidden;
+                white-space: nowrap;
+                cursor: pointer;
+                font-size: 23px;
+                color: #ccc;
+                margin: 0;
+            }
+            &:not(:checked) > label:before {
+                content: "★ ";
+            }
+            & > input:checked ~ label {
+                color: #ffc700;
+            }
+            &:not(:checked) > label:hover,
+            &:not(:checked) > label:hover ~ label {
+                color: #deb217;
+            }
+            & > input:checked + label:hover,
+            & > input:checked + label:hover ~ label,
+            & > input:checked ~ label:hover,
+            & > input:checked ~ label:hover ~ label,
+            & > label:hover ~ input:checked ~ label {
+                color: #c59b08;
+            }
+        }
+    }
+}
+
+.evaluationFormPage {
+    .question {
+        padding: 24px;
+        &:not(:last-child) {
+            border-bottom: 1px solid rgba(0, 0, 0, 0.04);
+        }
+
+        textarea {
+            min-height: 114px;
+        }
+    }
+    .employeeCard {
+        margin-bottom: 15px;
+        h5 {
+            font-weight: 400;
+            font-size: 14px;
+            color: $c-f-p;
+            text-transform: capitalize;
+            margin: 0;
+        }
+
+        p {
+            font-weight: 400;
+            font-size: 14px;
+            color: $c-f-s;
+        }
+    }
+
+    label {
+        font-weight: 400;
+        font-size: 14px;
+        color: $c-f-p;
+    }
+
+    .rating {
+        border: 1px solid #d8d8d8 !important;
+        padding: 12px 21px;
+        height: 50px;
+        border-radius: 5px;
+        color: $c-f-p;
+    }
+
+    .sectionDDS1 {
+        border: none;
+    }
+}
+
+.employeesDetails {
+    .detailsTabsHead {
+        flex-wrap: nowrap;
+        .nav-link {
+            padding: 10px 9px;
+
+            font-size: 14px;
+            height: 100%;
+        }
+    }
+
+    .uploadPhoto {
+        border: 1px solid #d8d8d8;
+        border-radius: 6px;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        cursor: pointer;
+
+        .uploadIcon {
+            position: absolute;
+            top: 8px;
+            right: 8px;
+        }
+        input {
+            opacity: 0;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+        }
+    }
+
+    .form-check {
+        border: 1px solid #d8d8d8 !important;
+        background: #ffffff;
+        border-radius: 5px;
+        border: none;
+        height: 50px;
+        padding: 12px 21px;
+        width: 100%;
+        -webkit-padding-end: 40px;
+        padding-inline-end: 40px;
+        color: $c-f-p;
+        margin-bottom: 20px;
+        display: flex;
+        gap: 10px;
+        label {
+            margin: 0;
+        }
+
+        input {
+            margin-inline-start: 0px;
+        }
+    }
+
+    // .companyLocations {
+    //     display: flex;
+    //     gap: 10px;
+    //     border: 1px solid #d8d8d8 !important;
+    //     border-radius: 8px;
+    //     height: 50px;
+    //     padding: 5px 15px;
+    //     color: $c-f-p;
+    //     margin-bottom: 20px;
+    //     .location {
+    //         border: 1px solid #d8d8d8 !important;
+    //         background: #ffffff;
+    //         border-radius: 5px;
+    //         border: none;
+    //         padding: 10px;
+    //         color: $c-f-p;
+    //         width: 155px;
+
+    //         h5 {
+    //             font-weight: 400;
+    //             font-size: 14px;
+    //             margin: 0;
+    //         }
+
+    //         svg {
+    //             cursor: pointer;
+    //         }
+    //     }
+    // }
+
+    .headerTitle {
+        text-transform: capitalize;
+        height: 25px;
+        font-weight: 600;
+        font-size: 18px;
+        overflow: hidden;
+        color: $c-f-p;
+        margin-bottom: 10px;
+    }
+
+    .attendanceCard {
+        margin: auto;
+        margin-top: 25px;
+        background: #fff;
+        position: relative;
+
+        .content {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+
+            &:not(:first-of-type) {
+                justify-content: center;
+                align-items: center;
+
+                &::before {
+                    content: "";
+                    width: 2px;
+                    position: absolute;
+                    background-color: #b4b4b4;
+                    height: 35px;
+                    left: 0;
+                    top: 50%;
+                    transform: translate(-50%, -50%);
+                }
+                &:lang(ar) {
+                    &::before {
+                        right: 0;
+                        left: auto;
+                    }
+                }
+            }
+
+            .number {
+                color: $c-p;
+                font-weight: 600;
+                font-size: 25px;
+                display: flex;
+                align-items: flex-end;
+                gap: 5px;
+                margin-bottom: 20px;
+
+                span {
+                    font-size: 15px;
+                    font-weight: normal;
+                    margin-bottom: 6px;
+                }
+            }
+
+            .description {
+                color: #868686;
+                font-size: 14px;
+                text-transform: capitalize;
+            }
+        }
+    }
+
+    .uploadFileBox {
+        height: 56px;
+        background: #f9f9f9;
+        border: 1px dashed $c-p;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+
+        &.hidden {
+            display: none;
+        }
+
+        .title {
+            font-weight: 400;
+            font-size: 14px;
+            text-align: center;
+            color: #1e2022;
+            margin-bottom: 4px;
+        }
+
+        .des {
+            font-weight: 400;
+            font-size: 14px;
+            text-align: center;
+            color: #868686;
+        }
+
+        .uploadInput {
+            width: fit-content;
+            margin: 16px auto;
+        }
+
+        input[type="file"] {
+            opacity: 0;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            cursor: pointer;
+        }
+
+        .fileSize {
+            font-size: 14px;
+            font-weight: 400;
+            text-align: center;
+            color: #77838f;
+        }
+    }
+
+    .uploadPhoto {
+        max-width: 250px;
+        min-height: 200px;
+        width: 100%;
+    }
+
+    .personalSection1 {
+        .uploadPhoto {
+            float: right;
+            &:lang(ar) {
+                float: left;
+            }
+        }
+    }
+
+    @media (max-width: 1199px) {
+        .personalSection1 {
+            flex-direction: column-reverse;
+        }
+        .uploadPhoto {
+            float: unset !important;
+            margin: auto;
+            margin-bottom: 20px;
+            justify-content: center;
+        }
+    }
+}

@@ -1,0 +1,1 @@
+{!! $evaluations->appends(request()->input())->links() !!}

@@ -1,0 +1,65 @@
+.permissionsPage {
+  margin-bottom: 30px;
+}
+.permissionsPage .name {
+  color: var(--color-f-primary);
+  font-weight: 500;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+.permissionsPage .searchName {
+  width: 30%;
+}
+.permissionsPage .searchName input {
+  background: transparent;
+  border: none;
+  box-shadow: none;
+  background-color: var(--color-card);
+  padding: 10px;
+}
+.permissionsPage .permissionsForm .searchBar {
+  margin: 20px 0;
+}
+.permissionsPage .permissionsForm .searchBar .input-group {
+  width: 300px;
+  border-radius: 10px;
+  background-color: var(--color-card);
+  padding: 5px;
+}
+.permissionsPage .permissionsForm .searchBar .input-group .input-group-text,
+.permissionsPage .permissionsForm .searchBar .input-group input {
+  background: transparent;
+  border: none;
+  box-shadow: none;
+}
+.permissionsPage .userPermissions {
+  margin-bottom: 20px;
+}
+.permissionsPage .userPermissions .permissionCard {
+  margin-bottom: 30px;
+}
+.permissionsPage .userPermissions .permissionCard .name {
+  color: #868686;
+  margin-bottom: 5px;
+}
+.permissionsPage .userPermissions .permissionCard .checks {
+  gap: 50px;
+}
+.permissionsPage .userPermissions .permissionCard .checks label {
+  color: #868686 !important;
+}
+.permissionsPage .buttons {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 10px;
+}
+.permissionsPage .buttons button {
+  width: 145px;
+  height: 47px;
+  box-shadow: none;
+}
+.permissionsPage .buttons button.cancel {
+  background: #F8F8F8;
+  color: #B3B3B3;
+}

@@ -1,0 +1,63 @@
+.indexPage .banner {
+  min-height: 219px;
+  background-image: url("/hrmpage/src/images/banner.svg");
+  background-size: cover;
+  padding: 47px 88px;
+  margin-bottom: 24px;
+}
+.indexPage .banner h1 {
+  font-weight: 600;
+  font-size: 48px;
+  color: #fff;
+  margin-bottom: 20px;
+}
+.indexPage .banner h1 span {
+  background-color: #fff;
+  color: #0c7980;
+  padding: 2px 14px;
+  border-radius: 6px;
+}
+.indexPage .banner p {
+  font-weight: 500;
+  font-size: 32px;
+  color: #efefef;
+}
+.indexPage .jobs .job {
+  background: #ffffff;
+  border-left: 6px solid #0c7980;
+  border-radius: 10px;
+  padding: 24px 32px;
+  margin-bottom: 24px;
+}
+.indexPage .jobs .job .head {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.indexPage .jobs .job .head h2 {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 110%;
+  color: #0c7980;
+  margin-bottom: 20px;
+}
+.indexPage .jobs .job .head .jobType {
+  height: 47px;
+  display: flex;
+  align-items: center;
+  background: #efefef;
+  border-radius: 6px;
+  padding: 14px;
+  color: #0c7980;
+}
+.indexPage .jobs .job .head .location {
+  color: var(--color-second);
+}
+.indexPage .jobs .job .content .date {
+  margin-bottom: 20px;
+}
+@media (max-width: 767px) {
+  .indexPage .header .logo {
+    text-align: center;
+  }
+}

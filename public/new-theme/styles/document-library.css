@@ -1,0 +1,58 @@
+.documentLibraryPage .uploadFileBox {
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin-top: 20px;
+  background: #f4f9fb;
+  border: 1px dashed var(--color-primary);
+  border-radius: 15px;
+}
+.documentLibraryPage .uploadFileBox.hidden {
+  display: none;
+}
+.documentLibraryPage .uploadFileBox input[type=file] {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+.documentLibraryPage .uploadFileBox .title {
+  color: var(--color-primary);
+}
+
+.addDocumentLibraryPage .uploadFileBox {
+  height: 50px;
+  background: rgba(31, 144, 255, 0.1);
+  border: 1px dashed #066163;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.addDocumentLibraryPage .uploadFileBox .title {
+  font-weight: 500;
+  font-size: 16px;
+  text-align: center;
+  color: #1e2022;
+  margin-bottom: 4px;
+}
+.addDocumentLibraryPage .uploadFileBox .uploadInput {
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 16px auto;
+}
+.addDocumentLibraryPage .uploadFileBox input[type=file] {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}

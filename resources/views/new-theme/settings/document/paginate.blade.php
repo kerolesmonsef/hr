@@ -1,0 +1,1 @@
+{!! $documents->appends(request()->input())->links() !!}

@@ -1,0 +1,39 @@
+.attendancePage .searchBar {
+  margin-bottom: 20px;
+}
+.attendancePage .searchBar .input-group {
+  width: 300px;
+  border-radius: 10px;
+  background-color: var(--color-card);
+  padding: 5px;
+}
+.attendancePage .searchBar .input-group .input-group-text,
+.attendancePage .searchBar .input-group input {
+  background: transparent;
+  border: none;
+  box-shadow: none;
+}
+.attendancePage .searchBar .addNew {
+  background: var(--color-primary);
+  color: #fff;
+  border-radius: 2px;
+  padding: 10px 20px;
+}
+.attendancePage .attendanceTable .name {
+  text-transform: capitalize;
+  height: 25px;
+  font-weight: 500;
+  font-size: 16px;
+  overflow: hidden;
+  color: var(--color-f-primary);
+  margin-bottom: 10px;
+}
+.attendancePage .attendanceTable .table {
+  text-align: center;
+}
+.attendancePage .attendanceTable .table thead th {
+  color: #313030;
+}
+.attendancePage .attendanceTable .table th, .attendancePage .attendanceTable .table td {
+  border: 1px solid #EBEBEB;
+}

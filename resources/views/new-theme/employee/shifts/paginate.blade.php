@@ -1,0 +1,1 @@
+{!! $shifts->appends(request()->input())->links() !!}

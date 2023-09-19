@@ -1,0 +1,39 @@
+.newuserPage {
+  margin-bottom: 40px;
+}
+.newuserPage .newuserForm .name {
+  color: var(--color-f-primary);
+  font-weight: 500;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+.newuserPage .newuserForm .formInputs {
+  width: 80%;
+}
+.newuserPage .newuserForm .formInputs input,
+.newuserPage .newuserForm .formInputs select {
+  background: var(--color-card);
+  border: none;
+  box-shadow: none;
+  padding: 10px;
+}
+.newuserPage .newuserForm .formInputs .hint {
+  color: #F86464;
+  margin-top: 10px;
+}
+.newuserPage .newuserForm .buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+.newuserPage .newuserForm .buttons button {
+  border-radius: 6px;
+  padding: 5px 25px;
+  background: var(--color-primary);
+  border: none;
+}
+.newuserPage .newuserForm .buttons button.cancel {
+  background: #F8F8F8;
+  border-radius: 6px;
+  color: #B3B3B3;
+}

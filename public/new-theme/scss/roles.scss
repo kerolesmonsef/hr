@@ -1,0 +1,67 @@
+@import "variables";
+
+.rolesPage {
+    margin-bottom: 100px;
+    .searchBar {
+        margin-bottom: 20px;
+        .input-group {
+            width: 300px;
+            border-radius: 10px;
+            background-color: $c-card;
+            padding: 5px;
+
+            .input-group-text,
+            input {
+                background: transparent;
+                border: none;
+                box-shadow: none;
+            }
+        }
+
+        .addNew {
+            background: $c-p;
+            color: #fff;
+            border-radius: 2px;
+            padding: 10px 20px;
+        }
+    }
+
+    .rolesContent {
+        .name {
+            color: $c-f-p;
+            font-weight: 500;
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+
+        .rolesCard {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 20px;
+
+            .heading {
+                font-weight: bold;
+            }
+
+
+            .buttons {
+                display: flex;
+                gap: 10px;
+                margin-top: 10px;
+                button {
+                    width: 100px;
+                    &.edit {
+                        background: $c-p;
+                    }
+
+                    &.delete {
+                        background: #CC0707;
+                    }
+                }
+            }
+        }
+    }
+}

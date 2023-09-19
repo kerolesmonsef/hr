@@ -1,0 +1,217 @@
+@import "_variables";
+
+.meetingsPage {
+    .heading {
+        margin-bottom: 15px;
+    }
+    .meetingsCard {
+        display: flex;
+        gap: 30px;
+        align-items: center;
+        margin-bottom: 20px;
+        background-color: #ffffff;
+        padding: 10px 20px;
+        border-radius: 6px;
+
+        .date {
+            background-color: $c-p;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 10px;
+            color: #fff;
+            border-radius: 6px;
+            font-size: 20px;
+            font-weight: bold;
+            width: 80px;
+            height: 80px;
+        }
+
+        .content {
+            h3 {
+                font-weight: 600;
+                font-size: 14px;
+                margin-bottom: 5px;
+            }
+
+            p {
+                color: #b3b3b3;
+                font-weight: 400;
+                font-size: 14px;
+                margin-bottom: 5px;
+            }
+
+            .details {
+                color: $c-p;
+                cursor: pointer;
+            }
+        }
+
+        .details {
+            svg {
+                &:lang(ar) {
+                    rotate: 180deg;
+                }
+            }
+        }
+    }
+
+    textarea {
+        border: 1px solid #d8d8d8;
+        border-radius: 6px;
+        padding: 10px;
+        outline: none;
+        margin-top: 10px;
+        height: 200px;
+        width: 100%;
+    }
+
+    // meetings and events calendar
+    .calendar {
+        .calendarSelect {
+            width: 200px;
+            margin: 10px 0;
+            input {
+                font-weight: 600;
+                font-size: 16px;
+                border: none !important;
+            }
+        }
+
+        .fc {
+            td {
+                border: none;
+            }
+
+            .fc-header-toolbar {
+                display: none;
+            }
+        }
+
+        .fc-scrollgrid {
+            border: none !important;
+
+            .fc-col-header-cell {
+                border: none;
+            }
+
+            .fc-scrollgrid-sync-table {
+                border-inline-start: 1px solid rgb(6 97 99 / 10%);
+            }
+        }
+
+        .fc-col-header-cell {
+            padding: 20px;
+
+            a {
+                color: #292d32;
+                font-weight: normal;
+            }
+        }
+
+        .fc-day-other {
+            .fc-daygrid-day-top {
+                opacity: 1 !important;
+                a {
+                    color: #066163 !important;
+                }
+            }
+        }
+
+        .fc-daygrid-day-frame {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding: 10px;
+            border: 1px solid rgba(6, 97, 99, 0.1);
+
+            .fc-daygrid-day-top {
+                flex-direction: row;
+
+                .fc-daygrid-day-number {
+                    color: #292d32;
+                }
+            }
+
+            .fc-daygrid-event-harness {
+                position: relative;
+                width: 35px;
+                height: 35px;
+
+                &:first-of-type {
+                    left: 0 !important;
+                }
+
+                @for $i from 1 through 4 {
+                    &:nth-of-type(#{$i}) {
+                        left: #{-8 * $i}px;
+                        z-index: #{$i + 10};
+                    }
+                }
+
+                img {
+                    width: 35px;
+                    height: 35px;
+                }
+            }
+            .fc-daygrid-day-events {
+                display: flex;
+                // justify-content: center;
+
+                .fc-event {
+                    background-color: transparent !important;
+                    border: none !important;
+                    width: fit-content;
+                }
+            }
+        }
+    }
+
+    .tooltipS1.show {
+        .tooltip {
+            min-width: 90px;
+            padding: 10px 5px;
+            top: 0px;
+            height: 37px;
+        }
+    }
+
+    .drawerS1 {
+        .logo {
+            border: 1px solid #d8d8d8;
+            border-radius: 6px;
+            width: 130px;
+            height: 130px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            padding: 20px;
+
+            img {
+                width: 100%;
+                border-radius: 10px;
+            }
+
+            .editIcon {
+                position: absolute;
+                top: 5px;
+                right: 5px;
+                svg {
+                    cursor: pointer;
+                }
+            }
+
+            input[type="file"] {
+                opacity: 0;
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                cursor: pointer;
+            }
+        }
+    }
+}

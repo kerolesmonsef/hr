@@ -1,0 +1,43 @@
+.applyPage .bs-stepper-header {
+  max-width: 75%;
+  margin: 0 auto;
+  margin-top: 32px;
+  margin-bottom: 42px;
+}
+.applyPage .bs-stepper-header .step {
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: #eaeaea;
+}
+.applyPage .bs-stepper-header .step .step-trigger {
+  padding: 0px !important;
+}
+.applyPage .bs-stepper-header .step .step-trigger span {
+  background-color: #fff;
+  color: var(--color-second);
+  font-weight: 400;
+}
+.applyPage .bs-stepper-header .step.active, .applyPage .bs-stepper-header .step.done {
+  background-color: var(--color-bg-primary);
+}
+.applyPage .bs-stepper-header .step.active .step-trigger span, .applyPage .bs-stepper-header .step.done .step-trigger span {
+  color: var(--color-primary);
+}
+.applyPage .bs-stepper-header .step.active .step-trigger:disabled, .applyPage .bs-stepper-header .step.done .step-trigger:disabled {
+  opacity: 1;
+}
+.applyPage form .sectionS1 .form_section {
+  padding: 24px;
+}
+.applyPage form .sectionS1 .form_section:not(:last-of-type) {
+  border-bottom: 1px solid #efefef;
+}
+.applyPage form .actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0px 16px;
+}

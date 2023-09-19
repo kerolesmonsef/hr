@@ -1,0 +1,42 @@
+.evaluationPage .name {
+  text-transform: capitalize;
+  height: 25px;
+  font-weight: 500;
+  font-size: 16px;
+  overflow: hidden;
+  color: var(--color-f-primary);
+  margin-bottom: 10px;
+}
+.evaluationPage .searchBar {
+  margin-bottom: 20px;
+}
+.evaluationPage .searchBar .input-group {
+  width: 300px;
+  border-radius: 10px;
+  background-color: var(--color-card);
+  padding: 5px;
+}
+.evaluationPage .searchBar .input-group .input-group-text,
+.evaluationPage .searchBar .input-group input {
+  background: transparent;
+  border: none;
+  box-shadow: none;
+}
+.evaluationPage .searchBar .addNew {
+  background: var(--color-primary);
+  color: #fff;
+  border-radius: 2px;
+  padding: 10px 20px;
+}
+.evaluationPage .evaluationTable {
+  margin-top: 30px;
+}
+.evaluationPage .evaluationTable .table {
+  text-align: center;
+}
+.evaluationPage .evaluationTable .table thead th {
+  color: #313030;
+}
+.evaluationPage .evaluationTable .table th, .evaluationPage .evaluationTable .table td {
+  border: 1px solid #EBEBEB;
+}

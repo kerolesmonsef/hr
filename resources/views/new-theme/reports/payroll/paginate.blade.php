@@ -1,0 +1,1 @@
+{!! $payslips->appends(request()->input())->links() !!}

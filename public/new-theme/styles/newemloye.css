@@ -1,0 +1,55 @@
+.newemloyePage {
+  margin-bottom: 20px;
+}
+.newemloyePage .name {
+  text-transform: capitalize;
+  height: 25px;
+  font-weight: 500;
+  font-size: 16px;
+  overflow: hidden;
+  color: var(--color-f-primary);
+  margin-bottom: 10px;
+}
+.newemloyePage .searchBar {
+  margin-bottom: 20px;
+}
+.newemloyePage .searchBar .input-group {
+  width: 300px;
+  border-radius: 10px;
+  background-color: var(--color-card);
+  padding: 5px;
+}
+.newemloyePage .searchBar .input-group .input-group-text,
+.newemloyePage .searchBar .input-group input {
+  background: transparent;
+  border: none;
+  box-shadow: none;
+}
+.newemloyePage .personalDetails .uploadImage {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+}
+.newemloyePage .personalDetails .uploadCv {
+  margin: 20px 0;
+}
+.newemloyePage .head {
+  margin-bottom: 10px;
+}
+.newemloyePage .head .name {
+  margin: 0;
+}
+.newemloyePage .details {
+  display: flex;
+  width: 100%;
+  border-top: 1px solid #E7E7E7;
+}
+.newemloyePage .details .item {
+  padding: 20px;
+  border-right: 1px solid #E7E7E7;
+  flex: 1;
+}
+.newemloyePage .details .value {
+  padding: 20px;
+  flex: 2;
+}

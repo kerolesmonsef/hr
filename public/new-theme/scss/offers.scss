@@ -1,0 +1,196 @@
+@import "_variables";
+
+.offersPage {
+    .buttonS2 {
+        &.withBorder {
+            svg {
+                width: 10px;
+                transition: all 0.5s;
+            }
+        }
+    }
+
+    .search {
+        background: #fff;
+        input {
+            height: 38px;
+        }
+    }
+
+    .offers {
+        padding: 24px 0px;
+
+        .offer {
+            border: 1px solid #efefef;
+            box-shadow: 10px 24px 74px rgba(0, 0, 0, 0.04);
+            border-radius: 16px;
+            background: #fff;
+            padding: 15px 24px;
+
+            &:hover {
+                cursor: pointer;
+                background: rgba(9, 97, 99, 0.1098039216);
+            }
+
+            .Img {
+                padding: 8px 24px;
+                padding-inline-start: 0;
+
+                img {
+                    border-radius: 6px;
+                }
+            }
+
+            .content {
+                border-inline-start: 2px dashed #868686;
+                padding-inline-start: 24px;
+
+                h3,
+                .discount {
+                    font-weight: 600;
+                    font-size: 14px;
+                    text-transform: capitalize;
+                    margin-bottom: 8px;
+                }
+                .discount {
+                    font-size: 18px;
+                    color: $c-p;
+                }
+                p {
+                    font-weight: 400;
+                    font-size: 13px;
+                    text-transform: capitalize;
+                    color: $c-f-p;
+                }
+            }
+        }
+
+        .drawerS1 {
+            .contentDrawer {
+                .cards {
+                    .cardS1 {
+                        &:nth-of-type(4),
+                        &:nth-of-type(5) {
+                            .name {
+                                width: 100%;
+                                margin-bottom: 16px;
+                            }
+                            .des {
+                                width: 100%;
+                            }
+                        }
+                        &:nth-of-type(5) {
+                            .des {
+                                color: $c-p;
+                                text-decoration: underline;
+                            }
+                        }
+                    }
+                }
+
+                .offerImg {
+                    border: 1px solid #d8d8d8;
+                    border-radius: 6px;
+                    width: 130px;
+                    height: 130px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    position: relative;
+                    padding: 25px;
+
+                    img {
+                        width: 100%;
+                        border-radius: 10px;
+                    }
+
+                    .editIcon {
+                        position: absolute;
+                        top: 5px;
+                        right: 5px;
+                        svg {
+                            cursor: pointer;
+                        }
+                    }
+
+                    input[type="file"] {
+                        opacity: 0;
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                        cursor: pointer;
+                    }
+                }
+                .inputS1 {
+                    .iconImg {
+                        margin-inline-end: 20px;
+                    }
+                    &.url {
+                        input {
+                            color: $c-p;
+                        }
+                    }
+                    textarea {
+                        height: 185px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.addofferPage {
+    .inputS1 {
+        .iconImg {
+            margin-inline-end: 20px;
+        }
+        textarea {
+            height: 181px;
+        }
+    }
+    .uploadFileBox {
+        height: 181px;
+        background: rgba(6, 97, 99, 0.1);
+        border-radius: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+
+        .title {
+            font-size: 14px;
+            text-align: center;
+            color: $c-f-p;
+            margin-bottom: 8px;
+        }
+
+        .des {
+            font-size: 14px;
+            text-align: center;
+            color: #868686;
+        }
+
+        .uploadInput {
+            width: fit-content;
+            margin: 8px auto;
+        }
+
+        input[type="file"] {
+            opacity: 0;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            cursor: pointer;
+        }
+
+        .fileSize {
+            font-size: 14px;
+            text-align: center;
+            color: #77838f;
+        }
+    }
+}

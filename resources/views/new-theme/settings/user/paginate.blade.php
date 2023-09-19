@@ -1,0 +1,1 @@
+{!! $users->appends(request()->input())->links() !!}

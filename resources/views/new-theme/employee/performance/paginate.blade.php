@@ -1,0 +1,1 @@
+{!! $performance->appends(request()->input())->links() !!}

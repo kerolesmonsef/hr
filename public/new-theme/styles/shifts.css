@@ -1,0 +1,39 @@
+.shiftsPage .searchBar {
+  margin: 20px 0;
+}
+.shiftsPage .searchBar .input-group {
+  width: 300px;
+  border-radius: 10px;
+  background-color: var(--color-card);
+  padding: 5px;
+}
+.shiftsPage .searchBar .input-group .input-group-text,
+.shiftsPage .searchBar .input-group input {
+  background: transparent;
+  border: none;
+  box-shadow: none;
+}
+.shiftsPage .searchBar .addNew {
+  background: var(--color-primary);
+  color: #fff;
+  border-radius: 2px;
+  padding: 10px 20px;
+}
+.shiftsPage .shiftsTable .name {
+  text-transform: capitalize;
+  height: 25px;
+  font-weight: 500;
+  font-size: 18px;
+  overflow: hidden;
+  color: var(--color-f-primary);
+  margin-bottom: 20px;
+}
+.shiftsPage .shiftsTable .table {
+  text-align: center;
+}
+.shiftsPage .shiftsTable .table thead th {
+  color: #313030;
+}
+.shiftsPage .shiftsTable .table th, .shiftsPage .shiftsTable .table td {
+  border: 1px solid #EBEBEB;
+}

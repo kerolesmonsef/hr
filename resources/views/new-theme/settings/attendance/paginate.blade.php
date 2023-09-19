@@ -1,0 +1,1 @@
+{!! $childs->appends(request()->input())->links() !!}
